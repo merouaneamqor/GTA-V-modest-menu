@@ -1,0 +1,82 @@
+{
+  "CustomThemes" : [
+    {
+      "Name" : "Mike's H4x",
+      "FontName" : "Comic Sans MS",
+      "ItemColor" : "ff0000",
+      "TextColor" : "000000",
+      "SelectedItemColor" : "ffffff",
+      "SelectedTextColor" : "000000",
+      "BackgroundColor" : "ffffff",
+      "TransparencyColorKey" : "001337",
+      "ItemHeight" : 24,
+      "ItemWidth" : 350,
+      "ItemSpacing" : 1
+    },
+    {
+      "Name" : "sub1to's External",
+      "FontName" : "Verdana",
+      "ItemColor" : "3878e2",
+      "TextColor" : "010101",
+      "SelectedItemColor" : "85aced",
+      "SelectedTextColor" : "010101",
+      "BackgroundColor" : "010101",
+      "TransparencyColorKey" : "001337",
+      "ItemHeight" : 20,
+      "ItemWidth" : 350,
+      "ItemSpacing" : 0
+    },
+    {
+      "Name" : "Throwback",
+      "FontName" : "MS Sans Serif",
+      "ItemColor" : "f0f0f0",
+      "TextColor" : "000000",
+      "SelectedItemColor" : "000000",
+      "SelectedTextColor" : "f0f0f0",
+      "BackgroundColor" : "000000",
+      "TransparencyColorKey" : "ffffff",
+      "ItemHeight" : 20,
+      "ItemWidth" : 310,
+      "ItemSpacing" : 1
+    },
+    {
+      "Name" : "Monochrome",
+      "FontName" : "Segoe UI Semibold",
+      "ItemColor" : "000000",
+      "TextColor" : "ffffff",
+      "SelectedItemColor" : "ffffff",
+      "SelectedTextColor" : "000000",
+      "BackgroundColor" : "000000",
+      "TransparencyColorKey" : "001337",
+      "ItemHeight" : 20,
+      "ItemWidth" : 350,
+      "ItemSpacing" : 0
+    },
+    {
+      "Name" : "Banana",
+      "FontName" : "Segoe UI Semibold",
+      "ItemColor" : "003566",
+      "TextColor" : "FFFFFF",
+      "SelectedItemColor" : "FFD60A",
+      "SelectedTextColor" : "003566",
+      "BackgroundColor" : "FFD60A",
+      "TransparencyColorKey" : "000000",
+      "ItemHeight" : 25,
+      "ItemWidth" : 400,
+      "ItemSpacing" : 3
+    },
+    {
+      "Name" : "Fingreen",
+      "FontName" : "Verdana",
+      "ItemColor" : "001337",
+      "TextColor" : "00ff00",
+      "SelectedItemColor" : "00ff00",
+      "SelectedTextColor" : "001337",
+      "BackgroundColor" : "00ff00",
+      "TransparencyColorKey" : "001337",
+      "ItemHeight" : 20,
+      "ItemWidth" : 350,
+      "ItemSpacing" : 2
+    }
+  ]
+}

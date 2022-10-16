@@ -1,0 +1,208 @@
+local adminSpotter = menu.add_submenu("Admin Detection")
+local admins = 
+{
+	"Spacer-galore",
+	"Fortune_Cukie",
+	"Laurie_Williams",
+	"RollD20",
+	"SecretWizzle54",
+	"Wawaweewa_I_Like",
+	"BackBoyoDrill",
+	"NoAuthorityHere",
+	"ScentedString",
+	"CapnZebraZorse",
+	"godlyGoodestBoi",
+	"whiskylifter",
+	"pigeon_nominate",
+	"SlightlyEvilHoss",
+	"ChangryMonkey",
+	"StompoGrande",
+	"x_Shannandoo_x",
+	"Long-boi-load",
+	"NootN0ot",
+	"applecloning",
+	"BeoMonstarh",
+	"BlobbyFett22",
+	"ExoSnowBoarder",
+	"ExtremeThanks15",
+	"BailMail99",
+	"ForrestTrump69",
+	"KingOfGolf",
+	"KrustyShackles",
+	"PassiveSalon",
+	"PearBiscuits34",
+	"SlowMoKing",
+	"Smooth_Landing",
+	"SuperTrevor123",
+	"Tamehippo",
+	"Thrillhouse12",
+	"LazingLion",
+	"KorruptUserDayta",
+	"LivelyCommanderS",
+	"FishingFissures",
+	"uwu-bend",
+	"VickDMF",
+	"AlpacaBarista",
+	"The_Real_Harambe",
+	"Flares4Lyfe",
+	"BinnyAndTheJets",
+	"VinnyPetrol",
+	"LazerGameBounce",
+	"FluteOfMilton",
+	"PipPipJongles",
+	"YUyu-lampon",
+	"DeadOnAir",
+	"Dumptruck42168",
+	"Poppernopple",
+	"KrunchyCh1cken",
+	"BlessedChu",
+	"Surgeio",
+	"WindmillDuncan",
+	"Wanted_Sign42",
+	"Paulverines",
+	"ZombieTom66",
+	"st1nky_p1nky",
+	"OilyLordAinsley",
+	"FruitPuncher15",
+	"PisswasserMax",
+	"BanSparklinWater",
+	"BrucieJuiceyIV",
+	"RapidRaichu",
+	"kingmario11",
+	"DigitalFox9",
+	"CheeesesteakPhil",
+	"FoxesAreCool69",
+	"SweetPlumbus",
+	"NotSweetPlumbus",
+	"IM-_-Wassup",
+	"WickedFalcon4054",
+	"aquabull",
+	"Ghostofwar1",
+	"DAWNBILLA",
+	"Aur3lian",
+	"JulianApost4te",
+	"DarkStar7171",
+	"xCuteBunny",
+	"random_123",
+	"SheddingYeti",
+	"random123",
+	"flyingcobra16",
+	"CriticalRegret",
+	"ScentedPotter",
+	"Huginn5",
+	"Sonknuck-",
+	"HammerDaddy69",
+	"johnet123",
+	"bipolarcarp",
+	"jakw0lf",
+	"Kakorot02",
+	"CrazyCatPilots",
+	"G_ashman",
+	"Rossthetic",
+	"StrongBelwas1",
+	"vulconn",
+	"TonyMSD1",
+	"AMoreno14",
+	"PayneInUrAbs",
+	"shibuz_gamer123",
+	"M1thras",
+	"Th3_Morr1gan",
+	"Z3ro_Chill",
+	"Titan261",
+	"Coffee_Collie",
+	"YellingRat",
+	"BananaGod951",
+	"RDR_Dev",
+	"FecundWolf",
+	"trajan5",
+	"thewho146",
+	"Bangers_RSG",
+	"Bash_RSG",
+	"Bubblez_RSG",
+	"ramendingo",
+	"ChefRSG",
+	"Chunk_RSG",
+	"HotTub_RSG",
+	"JPEGMAFIA_RSG",
+	"Klang_RSG",
+	"Lean1_RSG",
+	"Ton_RSG",
+	"RSGWolfman",
+	"TheUntamedVoid",
+	"TylerTGTAB",
+	"Wilted_spinach",
+	"DannSw",
+	"RSGINTJoe",
+	"RSGGuestV",
+	"RSGGuest50",
+	"RSGGuest40",
+	"Logic_rsg",
+	"RSGGuest12",
+	"RSGGuest7",
+	"ScottM_RSG",
+	"Rockin5",
+	"MonkeyViking",
+	"Anghard07",
+	"playrockstar6",
+	"PlayRockstar5",
+	"PlayRockstar1",
+	"Player8_RSG",
+	"Player7_RSG",
+	"MaxPayneDev16",
+	"MaxPayneDev15",
+	"MaxPayneDev14",
+	"MaxPayneDev13",
+	"MaxPayneDev12",
+	"MaxPayneDev11",
+	"MaxPayneDev10",
+	"MaxPayneDev9",
+	"MaxPayneDev8",
+	"MaxPayneDev7",
+	"MaxPayneDev6",
+	"MaxPayneDev5",
+	"MaxPayneDev4",
+	"MaxPayneDev3",
+	"MaxPayneDev2",
+	"MaxPayneDev1",
+	"MaxPayne3Dev12",
+	"MaxPayne3Dev11",
+	"MaxPayne3Dev9",
+	"GTAdev4",
+	"GTAdev3",
+}
+adminSpotter:add_array_item("Action", {"Disconnect from Session", "Disconnect from GTA:O", "Notify only"}, function()
+	return 1
+end, function(action)
+	while true do
+		for i = 0, 31 do
+			local ply = player.get_player_ped(i)
+			if ply then
+				adminname = player.get_player_name(i)
+				for x = 1, #admins
+				do
+					if adminname == admins[x] then
+						if action == 1 then 
+							print("[!] Admin detected: " .. adminname .. "\n[*] Disconnecting/ Emptying session...")
+							menu.empty_session() 
+						elseif action == 2 then
+							print("[!] Admin detected: " .. adminname .. "\n[*] Disconnecting from GTA:O...")
+							menu.start_singleplayer()
+						elseif action == 3 then
+							print("[!] Admin detected: " .. adminname)			
+							
+						end
+					end
+				end
+			end
+		end
+		sleep(5)
+	end
+end)
+ 
+adminSpotter:add_action("How To (console)", function() 
+	print("[HOW TO] Chose your wanted action and enter. To change the action, restart the menu.\n[HOW TO] Note: Notify will spam the console if there is an admin.")
+end)
+adminSpotter:add_action("---", function() end)
+adminSpottercreds = adminSpotter:add_submenu("Credits")
+adminSpottercreds:add_action("zjz#9999 (orig. Creator)", function() end)
+adminSpottercreds:add_action("Bababoiiiii#7176 (Finish it, improvements)", function() end)
