@@ -1,0 +1,21 @@
+"KeyBindings": {
+      "BackKey": 8,
+      "DownKey": 75,
+      "LeftKey": 74,
+      "MenuToggle": 116,
+      "RightKey": 76,
+      "SelectKey": 13,
+      "UpKey": 73
+    },
+
+
+
+
+como cambiar menu kiddions para usar con teclas normales que no sea en teclado numerico o numpad
+8  tecla RETROCEDER (hacia atrás)
+75    tecla k (bajar)
+74    tecla J (desplazarse hacia la izquierda o disminuir valor)
+116 tecla F5 (cerrar o abrir menu)
+76    tecla L (desplazarse hacia la derecha o aumentar valor)
+73    tecla i (subir/ arriba)
+13    tecla ENTER (activar o seleccionar)

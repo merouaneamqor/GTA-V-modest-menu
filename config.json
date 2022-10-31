@@ -39,16 +39,16 @@
     "TextColor": "F2F3F4",
     "TransparencyColorKey": "000000",
     "ViewableItems": 50,
-    "XPosition": 0,
-    "YPosition": -5
+    "XPosition": 240,
+    "YPosition": 40
   },
   "PlayerOptions": {
     "AquaLungs": false,
     "EveryoneIgnore": false,
     "FreezeWantedLevel": false,
-    "GodMode": true,
+    "GodMode": false,
     "HealthBoost": "Normal",
-    "NeverWanted": true,
+    "NeverWanted": false,
     "NoRagdoll": false,
     "PoliceIgnore": false,
     "RunSpeed": 1.000000,
